@@ -4,11 +4,11 @@ import { useNavigate } from 'react-router-dom'
 export const authDataContext = createContext()
 import {io} from 'socket.io-client'
 
-export let socket = io('http://localhost:8000')
+export let socket = io('https://linkedin-backend-lny3.onrender.com')
 
 
 const AuthContext = ({children}) => {
-    const serverUrl = 'http://localhost:8000'
+    const serverUrl = 'https://linkedin-backend-lny3.onrender.com'
     const [userData,setUserData]=useState(null)
     const [edit,setEdit]=useState(false)
     const [postData,setPostData]=useState([])
