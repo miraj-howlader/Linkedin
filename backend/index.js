@@ -20,7 +20,7 @@ const app = express()
 const server = http.createServer(app)
 export const io = new Server(server,{
     cors:({
-        origin:'http://localhost:5173',
+        origin:'https://linkedin-frontend-8rer.onrender.com',
         credentials:true
     })
 })
@@ -32,7 +32,7 @@ app.get('/',(req,res)=>{
     res.send('Server is Live')
 })
 app.use(cors({
-    origin:'http://localhost:5173',
+    origin:'https://linkedin-frontend-8rer.onrender.com',
     credentials:true
 }))
 
