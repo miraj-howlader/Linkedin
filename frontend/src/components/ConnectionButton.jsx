@@ -6,7 +6,7 @@ import axios from 'axios'
 import { io } from 'socket.io-client'
 import { useEffect } from 'react'
 import { useState } from 'react'
-const socket = io('http://localhost:8000')
+const socket = io('https://linkedin-backend-lny3.onrender.com')
 
 const ConnectionButton = ({userId}) => {
      const {serverUrl,userData,navigate}=useContext(authDataContext)
